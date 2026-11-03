@@ -9,7 +9,14 @@ function getById(id: number): Book | undefined {
   return books.find((book) => book.id === id)
 }
 
+function getByTitle(title: string): Book | undefined {
+  return books.find(
+    (book) => book.title.toLowerCase() === title.trim().toLowerCase()
+  )
+}
+
 export const bookService = {
   getAll,
   getById,
+  getByTitle
 }
