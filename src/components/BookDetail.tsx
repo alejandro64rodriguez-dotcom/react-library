@@ -1,10 +1,11 @@
 import { Link, useParams } from "react-router-dom"
 import { bookService } from "@/services/BookService"
 
-function BookDetail() {
-  const { id } = useParams()
 
-  const book = bookService.getById(Number(id))
+function BookDetail() {
+  const { title } = useParams()
+
+  const book = bookService.getByTitle(String(title))
 
   if (!book) {
     return <p>Libro no encontrado</p>

@@ -13,7 +13,7 @@ function BookSearch() {
       return
     }
 
-    navigate(`/books/${book.id}`)  }
+    navigate(`/books/${(book.title)}`) }
 
   return (
     <div>
