@@ -2,13 +2,13 @@ import type { Book } from "@/types/book"
 
 interface Props {
   book: Book
-  onClick: (id: number) => void
+onClick: (title: string) => void
 }
 
 function BookCard({ book, onClick }: Props) {
   return (
     <article
-      onClick={() => onClick(book.id)}
+     onClick={() => onClick(book.title)}
       className="cursor-pointer rounded-lg border p-4 shadow transition hover:shadow-lg"
     >
       <img

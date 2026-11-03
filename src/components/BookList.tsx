@@ -7,9 +7,9 @@ function BookList() {
   const books = bookService.getAll()
   const navigate = useNavigate()
 
-  function handleBookClick(id: number) {
-    navigate(`/books/${id}`)
-  }
+ function handleBookClick(title: string) {
+  navigate(`/books/${encodeURIComponent(title)}`)
+}
 
   return (
     <main>

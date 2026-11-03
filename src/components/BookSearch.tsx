@@ -13,7 +13,7 @@ function BookSearch() {
       return
     }
 
-    navigate(`/books/${(book.title)}`) }
+    navigate(`/books/${encodeURIComponent(book.title)}`)}
 
   return (
     <div>

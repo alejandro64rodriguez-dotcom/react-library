@@ -1,11 +1,12 @@
 import { Link, useParams } from "react-router-dom"
 import { bookService } from "@/services/BookService"
 
-
 function BookDetail() {
   const { title } = useParams()
+  console.log("Título recibido:", title)
 
   const book = bookService.getByTitle(String(title))
+  console.log("Libro encontrado:", book)
 
   if (!book) {
     return <p>Libro no encontrado</p>
