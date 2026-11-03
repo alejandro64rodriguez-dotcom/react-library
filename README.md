@@ -1,3 +1,10 @@
+Pureba de nivel React-typescript
+Objetivo: Evaluar la capacidad del desarrollador para construir una aplicación React funcional con TypeScript, gestionando una colección de datos local y navegación entre componentes, utilizando gestión de estado moderno (Hooks) y siguiendo las mejores prácticas de arquitectura (Custom Hooks, Componentes y React Router).
+
+Ejercicio: Crear una app con un listado de libros en el que se pueda navegar por ellos y un buscador para filtrar
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
