@@ -9,6 +9,7 @@ function BookCard({ book, onClick }: Props) {
   return (
     <article
       onClick={() => onClick(book.id)}
+      className="cursor-pointer rounded-lg border p-4 shadow transition hover:shadow-lg"
     >
       <img
         src={book.coverImage}
